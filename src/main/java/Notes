@@ -1,0 +1,13 @@
+config.properties file is used to store only global environment variables(ideally) - url, un, pw, browser.
+BaseClass - to read the config file, browser initialization, define waits.
+Pages - Object repository(element locator), methods.(extends BaseClass), we need to have constructor in each page to initialize the members.
+Testcases -  Test classes where we can call the methods from respective pages. We call browser initialization before every method(extends BaseClass).
+
+super()---> this calls the parent class constructor while executing the child class.
+
+
+
+
+
+
+Null pointer exception = try to access the method after the closing the brace
