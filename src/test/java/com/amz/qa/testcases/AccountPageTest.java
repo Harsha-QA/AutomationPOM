@@ -2,15 +2,20 @@ package com.amz.qa.testcases;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.amz.qa.base.TestBase;
 import com.amz.qa.pages.HomePage;
 import com.amz.qa.pages.LoginPage;
 import com.amz.qa.pages.YourAcountpage;
+import com.amz.qa.util.CustomListener;
+import com.relevantcodes.extentreports.LogStatus;
 
+@Listeners(CustomListener.class)
 public class AccountPageTest extends TestBase{
 	
 	LoginPage loginPage;
@@ -34,6 +39,7 @@ public class AccountPageTest extends TestBase{
 	@Test(priority = 1)
 	public void loginPageTitle()
 	{
+		
 		String title = homepage.verifyHomePageTitle();
 		//Assert.assertEquals(title, "Amazon Sign In");
 		System.out.println(title);
@@ -74,5 +80,6 @@ public class AccountPageTest extends TestBase{
 	public void tearDown()
 	{
 		driver.quit();
-	}
+	
+	  }
 }

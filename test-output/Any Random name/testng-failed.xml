@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Any Random name]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.amz.qa.util.ExtentReport"/>
+  </listeners>
+  <test thread-count="5" name="Harsha Test cases(failed)">
+    <classes>
+      <class name="com.amz.qa.testcases.SearchTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyPrice"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.amz.qa.testcases.SearchTest -->
+    </classes>
+  </test> <!-- Harsha Test cases(failed) -->
+</suite> <!-- Failed suite [Any Random name] -->

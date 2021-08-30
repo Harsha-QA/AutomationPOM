@@ -16,7 +16,7 @@ public class HomePage extends TestBase {
 	WebElement menu;
 	
 	@FindBy(xpath ="//span[contains(text(),'Your Account')]")
-			WebElement account;	
+	WebElement account;	
 	
 	
 	public HomePage() 

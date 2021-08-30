@@ -1,47 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-26T16:01:51Z" name="Default suite" finished-at="2021-07-26T16:02:15Z" duration-ms="24454">
+  <suite started-at="2021-08-30T14:53:29Z" name="Default suite" finished-at="2021-08-30T14:53:52Z" duration-ms="23777">
     <groups>
     </groups>
-    <test started-at="2021-07-26T16:01:51Z" name="Default test" finished-at="2021-07-26T16:02:15Z" duration-ms="24454">
-      <class name="com.amz.qa.testcases.SearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amz.qa.testcases.SearchTest@1ed6388a]" started-at="2021-07-26T16:01:51Z" name="setUp" finished-at="2021-07-26T16:02:01Z" duration-ms="10921" status="PASS">
+    <test started-at="2021-08-30T14:53:29Z" name="Default test" finished-at="2021-08-30T14:53:52Z" duration-ms="23777">
+      <class name="com.amz.qa.testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amz.qa.testcases.LoginTest@121314f7]" started-at="2021-08-30T14:53:29Z" name="setUp" finished-at="2021-08-30T14:53:32Z" duration-ms="3446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPrime()[pri:1, instance:com.amz.qa.testcases.SearchTest@1ed6388a]" started-at="2021-07-26T16:02:01Z" name="verifyPrime" finished-at="2021-07-26T16:02:02Z" duration-ms="317" status="PASS">
+        <test-method signature="loginPageTitle()[pri:1, instance:com.amz.qa.testcases.LoginTest@121314f7]" started-at="2021-08-30T14:53:32Z" name="loginPageTitle" finished-at="2021-08-30T14:53:32Z" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPrime -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amz.qa.testcases.SearchTest@1ed6388a]" started-at="2021-07-26T16:02:02Z" name="tearDown" finished-at="2021-07-26T16:02:03Z" duration-ms="762" status="PASS">
+        </test-method> <!-- loginPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amz.qa.testcases.LoginTest@121314f7]" started-at="2021-08-30T14:53:32Z" name="tearDown" finished-at="2021-08-30T14:53:33Z" duration-ms="820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amz.qa.testcases.SearchTest@1ed6388a]" started-at="2021-07-26T16:02:03Z" name="setUp" finished-at="2021-07-26T16:02:12Z" duration-ms="9693" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amz.qa.testcases.LoginTest@121314f7]" started-at="2021-08-30T14:53:33Z" name="setUp" finished-at="2021-08-30T14:53:36Z" duration-ms="2667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPrice()[pri:2, instance:com.amz.qa.testcases.SearchTest@1ed6388a]" started-at="2021-07-26T16:02:12Z" name="verifyPrice" finished-at="2021-07-26T16:02:14Z" duration-ms="1877" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="verifyLogo()[pri:2, instance:com.amz.qa.testcases.LoginTest@121314f7]" started-at="2021-08-30T14:53:36Z" name="verifyLogo" finished-at="2021-08-30T14:53:36Z" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amz.qa.testcases.LoginTest@121314f7]" started-at="2021-08-30T14:53:36Z" name="tearDown" finished-at="2021-08-30T14:53:37Z" duration-ms="794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amz.qa.testcases.LoginTest@121314f7]" started-at="2021-08-30T14:53:37Z" name="setUp" finished-at="2021-08-30T14:53:40Z" duration-ms="2842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginMethod()[pri:3, instance:com.amz.qa.testcases.LoginTest@121314f7]" started-at="2021-08-30T14:53:40Z" name="LoginMethod" finished-at="2021-08-30T14:53:51Z" duration-ms="11668" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <span class="a-button-text" aria-hidden="true" id="a-autoid-1-announce">...</span> is not clickable at point (157, 281). Other element would receive the click: <input class="a-button-input" type="submit" aria-labelledby="a-autoid-1-announce">
-  (Session info: chrome=92.0.4515.107)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='signHInSubmit']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SAGJ2JU', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+System info: host: 'DESKTOP-SAGJ2JU', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fbede99657de8a2517dddc630d893e9a]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 84583d3ba3449cb0236cdea5ef74c988
+*** Element info: {Using=xpath, value=//input[@id='signHInSubmit']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="a-button-text" aria-hidden="true" id="a-autoid-1-announce">...</span> is not clickable at point (157, 281). Other element would receive the click: <input class="a-button-input" type="submit" aria-labelledby="a-autoid-1-announce">
-  (Session info: chrome=92.0.4515.107)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='signHInSubmit']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SAGJ2JU', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+System info: host: 'DESKTOP-SAGJ2JU', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fbede99657de8a2517dddc630d893e9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 84583d3ba3449cb0236cdea5ef74c988
+*** Element info: {Using=xpath, value=//input[@id='signHInSubmit']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -53,10 +69,15 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at com.amz.qa.pages.Search.SelectPrice(Search.java:45)
-at com.amz.qa.testcases.SearchTest.verifyPrice(SearchTest.java:69)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.amz.qa.pages.LoginPage.login(LoginPage.java:47)
+at com.amz.qa.testcases.LoginTest.LoginMethod(LoginTest.java:51)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,15 +105,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPrice -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amz.qa.testcases.SearchTest@1ed6388a]" started-at="2021-07-26T16:02:14Z" name="tearDown" finished-at="2021-07-26T16:02:15Z" duration-ms="835" status="PASS">
+        </test-method> <!-- LoginMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amz.qa.testcases.LoginTest@121314f7]" started-at="2021-08-30T14:53:52Z" name="tearDown" finished-at="2021-08-30T14:53:52Z" duration-ms="919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.amz.qa.testcases.SearchTest -->
+      </class> <!-- com.amz.qa.testcases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

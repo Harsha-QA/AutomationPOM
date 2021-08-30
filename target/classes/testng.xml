@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="Any Random name">  
+
+<listeners>
+   <listener class-name= "com.amz.qa.util.ExtentReport"/>
+ </listeners>
+
+  <test name="Harsha Test cases">  
+    <classes>  
+      <class name="com.amz.qa.testcases.HomepageTest"/>  
+      <class name="com.amz.qa.testcases.LoginTest"/> 
+       <class name="com.amz.qa.testcases.AccountPageTest"/> 
+       <class name="com.amz.qa.testcases.SearchTest"/>
+        
+    </classes>  
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->  
