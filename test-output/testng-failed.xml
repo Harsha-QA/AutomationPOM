@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Any Random name]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.amz.qa.util.ExtentReport"/>
+  </listeners>
+  <test name="Harsha Test cases(failed)">
     <classes>
-      <class name="com.amz.qa.testcases.LoginTest">
+      <class name="com.amz.qa.testcases.GroupTest">
         <methods>
-          <include name="LoginMethod"/>
+          <include name="test4"/>
+          <include name="test3"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- com.amz.qa.testcases.LoginTest -->
+      </class> <!-- com.amz.qa.testcases.GroupTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Harsha Test cases(failed) -->
+</suite> <!-- Failed suite [Any Random name] -->

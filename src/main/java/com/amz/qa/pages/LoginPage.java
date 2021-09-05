@@ -17,12 +17,13 @@ public class LoginPage extends TestBase{
 	@FindBy(id = "ap_password")
 	WebElement password;
 	
-	@FindBy(xpath = "//input[@id='signHInSubmit']")
+	@FindBy(xpath = "//input[@id='signInSubmit']")
 	WebElement submit;
 	
 	@FindBy(xpath = "//a[contains(@class,'a-link-nav-icon')]")
 	WebElement amzlnk;
 	
+	//to initilize the browser
 	public LoginPage()
 	{
 		PageFactory.initElements(driver, this);

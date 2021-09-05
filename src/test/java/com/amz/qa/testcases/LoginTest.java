@@ -1,5 +1,6 @@
 package com.amz.qa.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -20,21 +21,32 @@ public class LoginTest extends TestBase{
 	public LoginTest() {
 		super();
 	}
+	Logger log = Logger.getLogger(LoginTest.class);
 	
 	@BeforeMethod
 	public void setUp()
-	{
+	{ 
+		log.info("****************************** Starting test cases execution  *****************************************");
+
 		initialization();
+		log.info("launching chrome broswer");
 		loginPage = new LoginPage();
+		
+		log.info("entering application URL");
+		log.warn("Hey this just a warning message");
+		log.fatal("hey this is just fatal error message");
+		log.debug("this is debug message");
+		
 	}
 
 	
-	@Test(priority = 1)
+	@Test(priority = 1, groups = {})
 	public void loginPageTitle()
 	{
 		String title = loginPage.validateLoginTitle();
 		Assert.assertEquals(title, "Amazon Sign In");
 		System.out.println(title);
+		log.info("login page title is--->"+title);
 	}
 	
 	@Test(priority = 2)
@@ -58,6 +70,7 @@ public class LoginTest extends TestBase{
 	public void tearDown()
 	{
 		driver.quit();
+		log.info("****************************** Browser is closed *****************************************");
 	}
 	
 }

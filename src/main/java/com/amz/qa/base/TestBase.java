@@ -60,7 +60,7 @@ public class TestBase {
 		TakesScreenshot screen = (TakesScreenshot) driver; //interface
 		File src = screen.getScreenshotAs(OutputType.FILE);//OutputType - interface
 		
-		File dst =  new File("C:/POMFramework/Selenium3/Screenshots/"+methodname+"_"+".jpg");
+		File dst =  new File("C:/POMFramework/Selenium3/Screenshots/"+methodname+date+"_"+".jpg");
 		
 		try {
 			FileUtils.copyFile(src, dst);

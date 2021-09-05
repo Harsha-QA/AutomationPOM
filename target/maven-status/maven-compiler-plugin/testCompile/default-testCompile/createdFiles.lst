@@ -1,0 +1,5 @@
+com\amz\qa\testcases\HomepageTest.class
+com\amz\qa\testcases\SearchTest.class
+com\amz\qa\testcases\LoginTest.class
+com\amz\qa\testcases\AccountPageTest.class
+com\amz\qa\testcases\AmzPayRechargeTest.class

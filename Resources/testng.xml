@@ -8,8 +8,9 @@
 
   <test name="Harsha Test cases">  
     <classes>  
-      <class name="com.amz.qa.testcases.HomepageTest"/>  
-      <class name="com.amz.qa.testcases.LoginTest"/> 
+       <class name="com.amz.qa.testcases.LoginTest"/>
+       <class name="com.amz.qa.testcases.HomepageTest"/> 
+       
        <class name="com.amz.qa.testcases.AccountPageTest"/> 
        <class name="com.amz.qa.testcases.SearchTest"/>
         

@@ -19,6 +19,7 @@ public class HomepageTest extends TestBase{
 	HomePage homepage;
 	YourAcountpage youraccountpage;
 	
+	//calls the parent class methods
 	public HomepageTest() {
 		super();
 	}

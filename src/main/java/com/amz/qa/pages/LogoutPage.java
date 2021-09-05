@@ -6,9 +6,5 @@ public class LogoutPage {
 		System.out.println("to log out from the amazon");
 	}
 	
-	public void closeapp()
-	{
-		System.out.println("git learning");
-	}
 
 }

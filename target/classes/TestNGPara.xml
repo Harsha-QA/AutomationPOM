@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="parameterization">  
+
+<test name="Parameter test using testng">  
+
+<parameter name="url" value ="https://login.yahoo.com/account/create"/>
+<parameter name="fname" value ="Harsha"/>
+<parameter name="lname" value ="Deepu"/>
+<parameter name="gend" value ="Male"/>
+
+    <classes>  
+       <class name="com.amz.qa.testcases.ParameterTest"/>
+    </classes>  
+    
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->  

@@ -4,15 +4,16 @@
   <listeners>
     <listener class-name="com.amz.qa.util.ExtentReport"/>
   </listeners>
-  <test thread-count="5" name="Harsha Test cases(failed)">
+  <test name="Harsha Test cases(failed)">
     <classes>
-      <class name="com.amz.qa.testcases.SearchTest">
+      <class name="com.amz.qa.testcases.GroupTest">
         <methods>
+          <include name="test4"/>
+          <include name="test3"/>
           <include name="tearDown"/>
-          <include name="verifyPrice"/>
-          <include name="setUp"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- com.amz.qa.testcases.SearchTest -->
+      </class> <!-- com.amz.qa.testcases.GroupTest -->
     </classes>
   </test> <!-- Harsha Test cases(failed) -->
 </suite> <!-- Failed suite [Any Random name] -->

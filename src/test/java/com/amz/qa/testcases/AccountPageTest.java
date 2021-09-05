@@ -59,6 +59,7 @@ public class AccountPageTest extends TestBase{
 		
 		}
 	
+	//vadidate the address
 	@Test(priority = 3)
 	
 	public void confirmAddressPage() throws InterruptedException

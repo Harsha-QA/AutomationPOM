@@ -43,7 +43,7 @@ public class HomePage extends TestBase {
 		}
 		else 
 			
-		System.out.println("Done mouse hover on menu options");
+		System.out.println("Done mouse hover on menu options, ok");
 		
 		account.click();
 		Thread.sleep(5000);

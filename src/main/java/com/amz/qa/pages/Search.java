@@ -21,6 +21,7 @@ public class Search extends TestBase{
 	@FindBy(xpath = "//input[@id='high-price']")
 	WebElement hp;
 	
+	
 	 public Search() {
 		
 		PageFactory.initElements(driver, this);

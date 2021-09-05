@@ -7,6 +7,7 @@ import com.amz.qa.base.TestBase;
 
 public class AmazonpayPage extends TestBase{
 	
+	//to initialize the browser
 	public AmazonpayPage() 
 	{
 		PageFactory.initElements(driver, this);
